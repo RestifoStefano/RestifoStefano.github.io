@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
         
         <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="Assets/css/swiper-bundle.min.css">
         
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="Assets/css/styles.css">
@@ -154,7 +154,7 @@
                      </div>
                  </div>
             </section>
-
+            
             <!--==================== SKILLS ====================-->
             <section class="skills section" id="skills">
                 <h2 class="section__title">Skills</h2>
@@ -397,12 +397,11 @@
                 <h2 class="section__title">Portfolio</h2>
                 <span class="section__subtitle">Lavori recenti</span>
 
-                <div class="portfolio__container container">
-                    <div>
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
                         <!--==================== PORTFOLIO 1 ====================-->
-                        <div class="portfolio__content grid">
+                        <div class="portfolio__content grid swiper-slide">
                             <img src="Assets/img/portfolio1.jpg" alt="" class="portfolio__img">
-
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">INSERIRE NOME</h3>
                                 <p class="portfolio__description">INSERIRE DESCRIZIONE</p>
@@ -413,9 +412,8 @@
                             </div>
                         </div>
                         <!--==================== PORTFOLIO 2 ====================-->
-                        <div class="portfolio__content grid">
+                        <div class="portfolio__content grid swiper-slide">
                             <img src="Assets/img/portfolio2.jpg" alt="" class="portfolio__img">
-
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">INSERIRE NOME</h3>
                                 <p class="portfolio__description">INSERIRE DESCRIZIONE</p>
@@ -426,9 +424,8 @@
                             </div>
                         </div>
                         <!--==================== PORTFOLIO 3 ====================-->
-                        <div class="portfolio__content grid">
+                        <div class="portfolio__content grid swiper-slide">
                             <img src="Assets/img/portfolio3.jpg" alt="" class="portfolio__img">
-
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">INSERIRE NOME</h3>
                                 <p class="portfolio__description">INSERIRE DESCRIZIONE</p>
@@ -439,6 +436,9 @@
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
 
@@ -471,7 +471,7 @@
         
 
         <!--==================== SWIPER JS ====================-->
-        <script src=""></script>
+        <script src="Assets/js/swiper-bundle.min.js"></script>
 
         <!--==================== MAIN JS ====================-->
         <script src="Assets/js/main.js"></script>

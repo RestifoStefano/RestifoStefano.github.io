@@ -563,6 +563,8 @@ img{
 /*==================== PORTFOLIO ====================*/
 .portfolio__container{
      overflow: initial;
+     /* display: flex;
+     justify-content: center;*/
 }
 
 .portfolio__content{
@@ -587,6 +589,7 @@ img{
 .portfolio__button:hover .button__icon{
     transform: translateX(.25rem);
 }
+ 
 /*==================== PROJECT IN MIND ====================*/
 
 
