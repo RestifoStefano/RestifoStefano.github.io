@@ -71,20 +71,6 @@ tabs.forEach(tab =>{
 /*==================== SERVICES MODAL ====================*/
 
 
-/*==================== PORTFOLIO SWIPER  ====================*/
-let swiper = new Swiper('.portfolio__container', {
-    cssMode: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    pagination: {
-      el: ".swiper-pagination",
-    },
-    mousewheel: true,
-    keyboard: true,
-  });
-
 /*==================== TESTIMONIAL ====================*/
 
 
