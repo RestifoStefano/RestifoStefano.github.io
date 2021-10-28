@@ -606,7 +606,7 @@ img{
 
  .manual-btn{
      border: 2px solid var(--first-color);
-     padding: 5px;
+     padding: 8px;
      border-radius: 10px;
      cursor: pointer;
      transition: .5s;
@@ -642,7 +642,7 @@ img{
 
  .navigation-auto div{
      border: 2px solid var(--first-color);
-     padding: 5px;
+     padding: 8px;
      border-radius: 10px;
      transition: .5s;
  }
