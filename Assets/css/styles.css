@@ -605,7 +605,7 @@ img{
  }
 
  .manual-btn{
-     border: 2px solid #fff;
+     border: 2px solid var(--first-color);
      padding: 5px;
      border-radius: 10px;
      cursor: pointer;
@@ -617,7 +617,7 @@ img{
  }
 
  .manual-btn:hover{
-     background: #fff;
+     background: var(--first-color);
  }
 
  #radio1:checked ~ .first{
@@ -641,7 +641,7 @@ img{
  }
 
  .navigation-auto div{
-     border: 2px solid #fff;
+     border: 2px solid var(--first-color);
      padding: 5px;
      border-radius: 10px;
      transition: .5s;
@@ -652,13 +652,13 @@ img{
  }
 
  #radio1:checked ~ .navigation-auto .auto-btn1{
-     background: #fff;
+     background: var(--first-color);
  }
  #radio2:checked ~ .navigation-auto .auto-btn2{
-     background: #fff;
+     background: var(--first-color);
  }
  #radio3:checked ~ .navigation-auto .auto-btn3{
-     background: #fff;
+     background: var(--first-color);
  }
 /*==================== PROJECT IN MIND ====================*/
 
