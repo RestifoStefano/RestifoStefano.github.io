@@ -77,7 +77,8 @@ var swiper = new Swiper(".portfolio__container", {
     loop: true,
     spaceBetween: 32,
     coverflowEffect: {
-      rotate: 0,
+      rotate: 50,
+      slideShadows: false,
     },
   });
 

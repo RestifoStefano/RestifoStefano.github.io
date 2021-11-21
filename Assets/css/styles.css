@@ -593,6 +593,10 @@ img{
 }
 
 /*==================== PORTFOLIO ====================*/
+.portfolio.section{
+    overflow: hidden;
+}
+
 .portfolio__card{
     position: relative;
     width: 330px;
