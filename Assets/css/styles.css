@@ -7,7 +7,7 @@
 
     /*========== Colors ==========*/
     /* Change favorite color */
-    --hue-color: 230; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 152; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -20,6 +20,8 @@
     --input-color: hsl(var(--hue-color), 70%, 96%);
     --body-color: hsl(var(--hue-color), 60%, 99%);
     --container-color: #FFF;
+
+    --white-color: #FFF;
 
     /*========== Font and typography ==========*/
     --body-font: 'Poppins', sans-serif;
@@ -52,6 +54,11 @@
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
+
+    /*========== Hover overlay ==========*/
+    --img-transitiion: .3s;
+    --img-hidden: hidden;
+    --img-scale: scale(1.1);
 }
 
 /* Font size for large devices */
@@ -412,6 +419,7 @@ img{
 
 .skills__header{
     display: flex;
+
     align-items: center;
     margin-bottom: var(--mb-2-5);
     cursor: pointer;
@@ -584,107 +592,46 @@ img{
     color: var(--first-color);
 }
 
-/*==================== CAROUSEL ====================*/
-.slider__settings{
-    margin: 0;
-    padding: 0;
-    margin-bottom: var(--mb-2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/*==================== PORTFOLIO ====================*/
+.portfolio__card{
+    position: relative;
+    width: 330px;
+    overflow: var(--img-hidden);
 }
 
-.slider{
-    width: 400px;
-    height: 250px;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.slides{
-    width: 500%;
-    height: 250px;
-    display: flex;
-}
-
-.slides input{
-    display: none;
-}
-
-.slide{
-    width: 20%;
-    transition: 2s ;
-}
-
-.slide img{
-    width: 400px;
-    height: 250px;
-}
-/* scorrimento manuale */
- .navigation-manual{
+.portfolio__data{
     position: absolute;
-    width: 400px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
- }
+    bottom: 1.5rem;
+    left: 1rem;
+}
 
- .manual-btn{
-     border: 2px solid var(--first-color);
-     padding: 5px;
-     border-radius: 10px;
-     cursor: pointer;
-     transition: .5s;
- }
+.portfolio__title,
+.portfolio__description{
+    color: var(--white-color);
+}
 
- .manual-btn:not(:last-child){
-     margin-right: 20px;
- }
+.portfolio__title{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-0-25);
+}
 
- .manual-btn:hover{
-     background: var(--first-color);
- }
+.portfolio__description{
+    display: block;
+    font-size: var(--smaller-font-size);
+}
 
- #radio1:checked ~ .first{
-     margin-left: 0;
- }
+.portfolio__img{
+    transition: var(--img-transitiion);
+}
 
- #radio2:checked ~ .first{
-     margin-left: -20%;
- }
+.portfolio__img:hover{
+    transform: var(--img-scale);
+}
 
- #radio3:checked ~ .first{
-     margin-left: -40%;
- }
- /* scorrimento automatico */
- .navigation-auto{
-     position: absolute;
-     display: flex;
-     width: 400px;
-     justify-content: center;
-     margin-top: 210px;
- }
-
- .navigation-auto div{
-     border: 2px solid var(--first-color);
-     padding: 5px;
-     border-radius: 10px;
-     transition: .5s;
- }
-
- .navigation-auto div:not(:last-child){
-     margin-right: 20px;
- }
-
- #radio1:checked ~ .navigation-auto .auto-btn1{
-     background: var(--first-color);
- }
- #radio2:checked ~ .navigation-auto .auto-btn2{
-     background: var(--first-color);
- }
- #radio3:checked ~ .navigation-auto .auto-btn3{
-     background: var(--first-color);
- }
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right{
+    background-image: none;
+}
 
 /*==================== CONTACT ME ====================*/
 .contact__container{
@@ -817,6 +764,11 @@ img{
     .qualification__data{
         gap: .5rem;
     }
+
+    .skills__container{
+        display: flex;
+        justify-content: center;
+    }
 }
 
 /* For medium devices */
@@ -916,7 +868,7 @@ img{
     }
 
     .home__scroll{
-        display: block;
+        display: none;
     }
 
     .home__scroll-button{
@@ -973,6 +925,7 @@ img{
     }
 }
 
+/* For large devices */
 @media screen and (min-width: 1024px) {
     .header,
     .main,
@@ -988,5 +941,3 @@ img{
         transform: translateX(-6rem);
     }
 }
-
-/* For large devices */

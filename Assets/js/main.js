@@ -68,15 +68,18 @@ tabs.forEach(tab =>{
     })
 })
 
-/*==================== CAROUSEL ====================*/
-var counter = 1;
-            setInterval(function() {
-                document.getElementById('radio' + counter).checked = true;
-                counter++;
-                if(counter > 3){
-                    counter = 1;
-                }
-},5000);
+/*==================== PORTFOLIO ====================*/
+var swiper = new Swiper(".portfolio__container", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop: true,
+    spaceBetween: 32,
+    coverflowEffect: {
+      rotate: 0,
+    },
+  });
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')

@@ -5,10 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!--==================== UNICONS ====================-->
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">       
+
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="Assets/css/styles.css">
+        <link rel="stylesheet" href="Assets/css/swiper-bundle.min.css">
         
         <title>Restifo Stefano</title>
     </head>
@@ -98,9 +99,10 @@
                                     129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                     -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
 
-                                    <image class="home__blob-img" x='12' y='18'  href="Assets/img/perfil.png"/>
+                                    <image class="home__blob-img" x='12' y='18'  href="Assets/img/profilo.png"/>
                                 </g>
                             </svg>
+
                         </div>
                         <div class="home__data">
                             <h1 class="home__title">Ciao, sono Stefano</h1>
@@ -125,7 +127,7 @@
             <!--==================== ABOUT ====================-->
             <section class="about section" id="about">
                  <h2 class="section__title">Informazioni su di me</h2>
-                 <span class="section__subtitle">Lavoro</span> 
+                 <span class="section__subtitle">Esperienza</span> 
                  <div class="about__container container grid">
                      <img src="Assets/img/about.jpg" alt="" class="about__img">
                      <div class="about__data">
@@ -154,13 +156,13 @@
                      </div>
                  </div>
             </section>
-            
+
             <!--==================== SKILLS ====================-->
             <section class="skills section" id="skills">
                 <h2 class="section__title">Skills</h2>
                 <span class="section__subtitle">Skill Tecniche</span>
                 <div class="skills__container container grid">
-                    <div>
+                    <div class = "skills__center">
                         <!--==================== SKILLS FRONTEND ====================-->
                         <div class="skills__content skills__close">
                             <div class="skills__header">
@@ -303,10 +305,10 @@
                         </div>
                     </div>
                     <div class="qualification__sections">
-                        <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                        <!--==================== QUALIFICATION SCHOOLS ====================-->
                         <div class="qualification__content qualification__active" data-content id="scuola">
 
-                            <!--==================== QUALIFICATION 1 ====================-->
+                            <!--==================== QUALIFICATION Its ====================-->
                             <div class="qualification__data">
                                 <div>
                                     <h3 class="qualification__title">Cloud Developer</h3>
@@ -323,7 +325,7 @@
                                 </div>
                             </div>
 
-                            <!--==================== QUALIFICATION 2 ====================-->
+                            <!--==================== QUALIFICATION Itis ====================-->
                             <div class="qualification__data">
                                 <div></div>
 
@@ -341,10 +343,10 @@
                                 </div>
                             </div>
                         </div>
-                        <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                        <!--==================== QUALIFICATION WORKS ====================-->
                         <div class="qualification__content" data-content id="lavoro">
                             
-                            <!--==================== QUALIFICATION 1 ====================-->
+                            <!--==================== QUALIFICATION STAGE RETI ====================-->
                             <div class="qualification__data">
                                 <div></div>
 
@@ -363,9 +365,8 @@
                                 </div>  
                             </div>
 
-                            <!--==================== QUALIFICATION 2 ====================-->
+                            <!--==================== QUALIFICATION STAGE Saronno ====================-->
                             <div class="qualification__data">
-
                                 <div>
                                     <h3 class="qualification__title">Tecnico Informatico</h3>
                                     <span class="qualification__subtitle">Saronno - Saronno Servizi</span>
@@ -378,7 +379,6 @@
                                 <div>
                                     <span class="qualification__rounder"></span>
                                 </div>
-
                             </div>
 
                         </div>
@@ -389,42 +389,55 @@
             <!--==================== PORTFOLIO ====================-->
             <section class="portfolio section" id="portfolio">
                 <h2 class="section__title">Portfolio</h2>
-                <span class="section__subtitle">Lavori recenti</span>
-                <div class="slider__settings">
-                    <div class="slider">
-                        <div class="slides">
-                            <input type="radio" name="radio-btn" id="radio1">
-                            <input type="radio" name="radio-btn" id="radio2">
-                            <input type="radio" name="radio-btn" id="radio3">
-                            <!--============= Inizio immagini =============-->
-                            <div class="slide first">
-                                <img src="Assets/img/portfolio1.jpg" alt="">
+                <div class="portfolio__container container swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- PRIMO PROGETTO -->
+                        <div class="portfolio__card swiper-slide">
+                            <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h2 class="portfolio__title">NOME PROGETTO 1</h2>
+                                <span class="portfolio__description">DESCRIZIONE PROGETTO</span>
                             </div>
-                            <div class="slide">
-                                <img src="Assets/img/portfolio2.jpg" alt="">
-                            </div>
-                            <div class="slide">
-                                <img src="Assets/img/portfolio3.jpg" alt="">
-                            </div>
-                            <!--============= Fine Immagini =============-->
-                            <!--============= Inizio scorrimento automatico =============-->
-                            <div class="navigation-auto">
-                                <div class="auto-btn1"></div>
-                                <div class="auto-btn2"></div>
-                                <div class="auto-btn3"></div>
-                            </div>
-                            <!--============= Fine scorrimento automatico =============-->
                         </div>
-                        <!--============= Inizio scorrimento manuale =============-->
-                        <div class="navigation-manual">
-                            <label for="radio1" class="manual-btn"></label>
-                            <label for="radio2" class="manual-btn"></label>
-                            <label for="radio3" class="manual-btn"></label>
+
+                        <!-- SECONDO PROGETTO -->
+                        <div class="portfolio__card swiper-slide">
+                            <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h2 class="portfolio__title">NOME PROGETTO 2</h2>
+                                <span class="portfolio__description">DESCRIZIONE PROGETTO</span>
+                            </div>
                         </div>
-                        <!--============= Fine scorrimento manuale =============-->
+
+                        <!-- TERZO PROGETTO -->
+                        <div class="portfolio__card swiper-slide">
+                            <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h2 class="portfolio__title">NOME PROGETTO 3</h2>
+                                <span class="portfolio__description">DESCRIZIONE PROGETTO</span>
+                            </div>
+                        </div>
+
+                        <!-- QUARTO PROGETTO -->
+                        <div class="portfolio__card swiper-slide">
+                            <img src="assets/img/portfolio2.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h2 class="portfolio__title">NOME PROGETTO 4</h2>
+                                <span class="portfolio__description">DESCRIZIONE PROGETTO</span>
+                            </div>
+                        </div>
+
+                        <!-- QUINTO PROGETTO -->
+                        <div class="portfolio__card swiper-slide">
+                            <img src="assets/img/portfolio1.jpg" alt="" class="portfolio__img">
+                            <div class="portfolio__data">
+                                <h2 class="portfolio__title">NOME PROGETTO 5</h2>
+                                <span class="portfolio__description">DESCRIZIONE PROGETTO</span>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
- 
             </section>
 
             <!--==================== CONTACT ME ====================-->
@@ -439,17 +452,16 @@
                                 <h3 class="contact__title">Chiamami</h3>
                                     <span class="contact__subtitle">3806919516</span>
                             </div>
-
                         </div>
 
                         <div class="contact__information">
                             <i class="uil uil-envelope contact__icon"></i>
                             <div>
                                 <h3 class="contact__title">Email</h3>
-                                    <span class="contact__subtitle">restifostefano01@gmail.com</span>
+                                <span class="contact__subtitle">restifostefano01@gmail.com</span>
                             </div>
-
                         </div>
+                        
                     </div>
                 </div>
             </section>
@@ -480,7 +492,7 @@
                         <a href="https://www.instagram.com/restifostefano/" target="_blank" class="footer__social">
                             <i class="uil uil-instagram"></i>
                         </a>
-                        <a href="https://www.facebook.com/restifostefano/" class="footer__social">
+                        <a href="https://www.facebook.com/restifostefano/" target="_blank" class="footer__social">
                             <i class="uil uil-facebook-f"></i>
                         </a>
                         <a href="" class="footer__social"></a>
@@ -495,8 +507,8 @@
             <i class="uil uil-arrow-up scrollup__icon"></i>
         </a>
 
-
         <!--==================== MAIN JS ====================-->
+        <script src="Assets/js/swiper-bundle.min.js"></script>
         <script src="Assets/js/main.js"></script>
     </body>
 </html>
