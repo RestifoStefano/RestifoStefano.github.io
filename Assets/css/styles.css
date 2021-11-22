@@ -489,14 +489,18 @@ img{
 }
 
 .skills__css{
-    width: 80%;
+    width: 85%;
 }
 
 .skills__js{
-    width: 65%;
+    width: 75%;
 }
 
 .skills__angular{
+    width: 60%;
+}
+
+.skills__flutter{
     width: 60%;
 }
 
