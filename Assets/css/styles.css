@@ -56,7 +56,7 @@
     --z-modal: 1000;
 
     /*========== Hover overlay ==========*/
-    --img-transitiion: .3s;
+    --img-transition: .3s;
     --img-hidden: hidden;
     --img-scale: scale(1.1);
 }
@@ -606,6 +606,8 @@ img{
 }
 
 .portfolio__card{
+    display: flex;
+    justify-content: center;
     position: relative;
     width: 330px;
     overflow: var(--img-hidden);
@@ -633,7 +635,7 @@ img{
 }
 
 .portfolio__img{
-    transition: var(--img-transitiion);
+    transition: var(--img-transition);
 }
 
 .portfolio__img:hover{
@@ -647,12 +649,14 @@ img{
 
 /*==================== CONTACT ME ====================*/
 .contact__container{
-    row-gap: 3rem;
+    display: grid;
+    row-gap: .5rem;
 }
 
 .contact__information{
     display: flex;
     margin-bottom: var(--mb-2);
+    margin-left: var(--mb-1-5);
 }
 
 .contact__icon{
@@ -781,6 +785,10 @@ img{
         display: flex;
         justify-content: center;
     }
+
+    .portfolio__data{
+        left: 1rem;
+    }
 }
 
 /* For medium devices */
@@ -809,6 +817,12 @@ img{
         display: grid;
         grid-template-columns: .6fr;
         justify-content: center;
+    }
+
+    .portfolio__data{
+        position: absolute;
+        bottom: 1.5rem;
+        left: 2.8rem;
     }
 }
 
@@ -935,6 +949,12 @@ img{
     .footer__socials{
         justify-self: flex-end;
     }
+
+    .portfolio__data{
+        position: absolute;
+        bottom: 1.5rem;
+        left: 4.5rem;
+    }
 }
 
 /* For large devices */
@@ -951,5 +971,9 @@ img{
 
     .home__social{
         transform: translateX(-6rem);
+    }
+
+    .portfolio__data{
+        left: 5rem;
     }
 }
